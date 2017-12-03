@@ -1,0 +1,30 @@
+# first setup for styled-component and prettier
+mkdir doneIt
+cd doneIt
+mkdir pages
+npm initi -y
+Add this in package.json
+```
+"scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+```
+yarn add react react-dom next styled-components babel-plugin-styled-components 
+yarn add --dev prettier
+echo -e "node_modules\n.next" >> .gitignore
+curl https://raw.githubusercontent.com/zeit/next.js/canary/examples/with-styled-components/.babelrc >> .babelrc
+curl https://raw.githubusercontent.com/zeit/next.js/canary/examples/with-styled-components/pages/_document.js >> ./pages/_document.js
+vim ./pages/_document.js <:wq> // for prettier to save it
+curl https://raw.githubusercontent.com/zeit/next.js/canary/examples/with-styled-components/pages/index.js >> ./pages/index.js
+Add this in pages/index.js
+```
+<style>A{`
+  body { margin: 0 }
+  * {box-sizing: border-box}
+`}</style>
+```
+yarn install
+yarn dev
+
