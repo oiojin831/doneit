@@ -9,7 +9,7 @@
     "start": "next start",
     "deploy": "now --public -e NODE_ENV=production --token $NOW_TOKEN --npm",
     "alias": "now alias --token=$NOW_TOKEN",
-    "alias-prod": "now alias --local-config='now.prod.json' --token=$NOW_TOKEN"
+    "alias-prod": "now alias --local-config=$NOW_PROD_JSON --token=$NOW_TOKEN"
   },
   "keywords": [],
   "author": "",
