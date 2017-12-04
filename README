@@ -1,4 +1,5 @@
 # first setup for styled-component and prettier
+`
 mkdir doneIt
 cd doneIt
 mkdir pages
@@ -28,3 +29,21 @@ Add this in pages/index.js
 yarn install
 yarn dev
 
+
+package.json에 넣기
+```
+"deploy": "now --public -e NODE_ENV=production --token $NOW_TOKEN --npm",
+"alias": "now alias --token=$NOW_TOKEN"
+```
+
+.travis.yml
+travis encrypt -r username/repo NOW_TOKEN=xxxxxxxxxxxxxxxxxxxxxxx --add
+
+now.json
+{
+  "name": "doneIt",
+  "alias": ["doneit-staging.now.sh"]
+}
+
+staging push하면 그냥 항상 스테이징으로 되게하고 
+master로 머지할때 또 배포되면 그떄 수동으로 production으로 바꿔주자:
