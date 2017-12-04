@@ -1,6 +1,4 @@
 {
-  "now": {
-    "name": "doneit",
-    "alias": ["doneit.now.sh", "doneit-staging.now.sh"]
-  }
+  "name": "doneIt",
+  "alias": ["doneit.now.sh"]
 }
