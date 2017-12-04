@@ -2,8 +2,5 @@
   "now": {
     "name": "doneit",
     "alias": ["doneit.now.sh", "doneit-staging.now.sh"]
-  },
-  "env": {
-    "NOW_TOKEN": "@now-token"
   }
 }
