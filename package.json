@@ -7,9 +7,9 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "deploy":
-      "now --local-config=$STAGE --public -e NODE_ENV=production --token $NOW_TOKEN --npm",
-    "alias": "now --local-config=$STAGE alias --token=$NOW_TOKEN"
+    "deploy": "now --public -e NODE_ENV=production --token $NOW_TOKEN --npm",
+    "alias": "now alias --token=$NOW_TOKEN",
+    "alias-prod": "now alias --local-config="now.prod.json" --token=$NOW_TOKEN"
   },
   "keywords": [],
   "author": "",
