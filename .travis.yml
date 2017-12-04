@@ -13,6 +13,7 @@ deploy:
   - provider: script
     script: npm run deploy
     after_script: npm run alias-prod
+    if: branch = master
     on:
       branch: master
 env:
