@@ -6,12 +6,12 @@ jobs:
   include:
     if: branch = master
     script: npm run deploy
-    after_script: npm run alias
+    after_script: npm run alias-prod
 jobs:
   include:
     if: branch = staging
     script: npm run deploy
-    after_script: npm run alias-prod
+    after_script: npm run alias
 env:
   global:
     secure: HKQ5sCHln/cLoRW4EK0DEt7caGbxufAgGept0dMiSwTMGXzJ+hhg3wGwBJRxif5B2CDnDp0zCsCgFznB3ymu66Sz+wc20VH6W17fmnFv65+TP0Kaq2Pq/955l5mpz/YwiAymEUVCFHyaDE26fCJmv2wzrVKtU6reUV7J4iYK/O8ODvdtDO4HOJQFWon3v0LBiva/xppFUk+qFqoJju/z5QigDichnQ2vFPa8JZ5vVYUC+9B0ILdqy9UILWOhuVMyi4v0NlOBGiyyqjjmZIrCwzoliYb68A5797jC2JeZNTErYyVTTKb50Csfxlx1MbVrx/UhRuOXkhjlpoVjJCsKmsSZElg3t9bZpVMJwOKnG5QxU8hiDMn7plI+/gNlYjIcokf5bqtYkJ6vxpwJIODw2vyx02eJn2w4DsY9TzIHk7yqYaBHx2GlFfjPrD48wZuvGKWWuQ4fPuhFyvDumbk0vpxhrXnRvcyxfLN85fnEg/O3SC9Tnke74K/0qqOu2jW1JQnxIhhC1teDvWdTfiXGLQ8uJG2U+QxOpIF5fpHRCjEMpDDRtuQWhvx8ZlS0U2M+nTDeRv85R6PAxglbvFWd263GiaYs3RdYyvytwAP+Dh/NJX6PaWR0gT1guGoAHY8MEDBtmLjsiyP6US+x6jDhDj9pMmKxpiwQiUL64//Ovdo=
