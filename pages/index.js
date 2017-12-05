@@ -6,4 +6,4 @@ const Title = styled.h1`
   font-size: 50px;
 `
 
-export default () => <Title>My page ver3</Title>
+export default () => <Title>My page ver4</Title>
