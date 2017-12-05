@@ -10,8 +10,8 @@ deploy:
     on:
       branch: staging
   # deploy develop to the staging environment
-  if: branch = master
     - provider: script
+      if: branch = master
       script: npm run deploy
       after_script: npm run alias-prod
       on:
