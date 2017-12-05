@@ -4,7 +4,7 @@ node_js:
 cache: npm
 jobs:
   include:
-    if: branch = master
+    if: type IN (pull_request)
     script: npm run deploy
     after_script: npm run alias-prod
 jobs:
